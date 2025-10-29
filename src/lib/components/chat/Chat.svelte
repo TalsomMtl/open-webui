@@ -92,6 +92,7 @@
 	import { getFunctions } from '$lib/apis/functions';
 	import Image from '../common/Image.svelte';
 	import { updateFolderById } from '$lib/apis/folders';
+	import AddLogoTalsom from './addLogoTalsom.svelte';
 
 	export let chatIdProp = '';
 
@@ -2491,6 +2492,7 @@
 								>
 									<!-- {$i18n.t('LLMs can make mistakes. Verify important information.')} -->
 								</div>
+								<AddLogoTalsom />
 							</div>
 						{:else}
 							<div class="flex items-center h-full">
